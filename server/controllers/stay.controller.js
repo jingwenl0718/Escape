@@ -52,25 +52,6 @@ module.exports.staysForOneUser = (req, res) => {
         .catch(err=>res.status(400).json(err))
 }
 
-// module.exports.addStay = async(req, res) => {
-//     try{
-//         // add comment into Comment
-//         const newStay = new Stay(req.body)
-//         newStay.host = req.params.hostId
-//         await newStay.save({image:request.file.filename})
-    
-//         // pushing the newly added comment into Job
-//         const updatedStay = await Host.findOneAndUpdate(
-//             {_id:req.params.hostId},
-//             {$push : {stay : newStay}},
-//             {new: true}
-//             )
-//         res.json(updatedStay)
-//     }catch(err){
-//         res.status(400).json(err)
-//     }
-// }
-
 module.exports.addStay = async(req, res) => {
     try{
         console.log("before")

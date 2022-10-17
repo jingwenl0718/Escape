@@ -5,7 +5,6 @@ const Schema = mongoose.Schema
 const StaySchema = new mongoose.Schema({
     image: { 
         type: String,
-        // required: [true, "Image is required"],
     },
     name: { 
         type: String,
@@ -20,10 +19,10 @@ const StaySchema = new mongoose.Schema({
         type: String,
         required: [true, "Addresse is required"]
     },
-    // coordinates: { 
+
     lat: {type: Number},
     lng: {type: Number},
-    // },
+
     description: { 
         type: String,
         required: [true, "Description is required"]

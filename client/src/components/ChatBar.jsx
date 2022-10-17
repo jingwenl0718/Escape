@@ -8,7 +8,6 @@ const ChatBar = (props) => {
     useEffect(() => {
         socket.on('newUserResponse', data => setUsers(data));
     }, [socket, users])
-    // listens and displays list of active users
 
     return (
         <div className="chat__sidebar">

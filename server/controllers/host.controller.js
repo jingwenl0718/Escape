@@ -52,7 +52,6 @@ module.exports.createHost = (request, response) => {
 
 module.exports.cookie =(req, res)=>{
     res
-        // httpOnly allows cookie to be view only by server
         .cookie("testkey","testvalue", {httpOnly:true})
         .json("success")
 }

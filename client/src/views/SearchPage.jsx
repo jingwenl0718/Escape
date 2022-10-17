@@ -13,7 +13,6 @@ import moment from 'moment';
 
 export default (props) => {
     const [stays, setStays] = useState([]);
-    // const [filterStays, setFilterStays] = useState([])
     const [type, setType] = useState("")
     const [room, setRoom] = useState("")
     const [people, setPeople] = useState(1)
@@ -162,7 +161,6 @@ export default (props) => {
 
                 </div>
                 <div className='map'>
-                    {/* <p>{markerPosition[0]}</p> */}
                     <LoadScript googleMapsApiKey={process.env.REACT_APP_GOOGLE_MAPS_API_KEY}>
                         <GoogleMap mapContainerStyle={mapStyles} zoom={3} center={defaultCenter}>
                             {stays.map((item, idx) => {
@@ -185,7 +183,6 @@ export default (props) => {
                             })
                             }
                             {selected &&  
-
                             <InfoWindow position={coordFromSelec} clickable={true} onCloseClick={() => setSelected()} >
                                 <div className="infowindow">
                                     <img src={`/images/${selected.image}`} className="small-image" alt="listing" id="popUpImg"/>

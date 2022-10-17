@@ -40,12 +40,7 @@ const ChatBody = (props) => {
                         </div>
                     )
                 )}
-                {/* displays the messages depending on whether you or another user sent the message */}
-
-                {/* {/Triggered when a user is typing/} */}
-                {/* <div className="message__status">
-                    <p>{typingStatus}</p>
-                </div> */}
+                
                 <div ref={newestMessagRef} />
             </div>
         </>

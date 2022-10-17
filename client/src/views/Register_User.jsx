@@ -31,7 +31,6 @@ export default () => {
         console.log(image)
 
         axios.post(`http://localhost:8000/api/airbnb/user`, formData, {withCredentials: true} )
-        // axios.post(`http://localhost:8000/api/airbnb/user`, {firstName, lastName, email, password, confirmPassword})
         .then(res => {
             console.log(res.response)
             navigate(`/dashboard/user`)

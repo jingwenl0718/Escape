@@ -8,7 +8,6 @@ import axios from "axios"
 
 export default () => {
     const navigate = useNavigate();
-    // const [hostId, setHostId] = useState("")
 
     const [host, setHost] = useState({
         email: "",
@@ -23,14 +22,6 @@ export default () => {
             [name] : value
         })
     }
-
-    // const getHostId = () => {
-    //     axios.get(`http://localhost:8000/api/getHost/`, {withCredentials: true})
-    //     .then( res => {
-    //         setHostId(res.data._id)
-    //     })
-    //     .catch(err => console.log(err))
-    // }
 
     const submitHandler = (e) =>{
         e.preventDefault()

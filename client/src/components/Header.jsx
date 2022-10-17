@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import '../styles/header.css'
 import {Link, useNavigate, useParams} from 'react-router-dom';
-import SearchBannerContainer from '../components/SearchBannerContainer';
 import SearchIcon from '@mui/icons-material/Search';
 import { Button } from '@mui/material';
 import axios from "axios"
@@ -52,22 +51,15 @@ export default (props) => {
             <div className='header_right'>
                 {!hostId ?
                 <div className='registration'>
-                <Button onClick={() => navigate('/register/host')} varriant='outlined' >Become an Escaper</Button> 
-
-                <Button onClick={() => navigate(`/login/host/`)} varriant='outlined' >Login</Button> 
-
-                <SearchIcon sx={{ color: "#972e79", fontSize:40}}/>
-
+                    <Button onClick={() => navigate('/register/host')} varriant='outlined' >Become an Escaper</Button> 
+                    <Button onClick={() => navigate(`/login/host/`)} varriant='outlined' >Login</Button> 
+                    <SearchIcon sx={{ color: "#972e79", fontSize:40}}/>
                 </div>
                 :
                 <div className='registration'>
-                <Button onClick={() => navigate(`/dashboard/host/${hostId}`)} varriant='outlined' >Dashboard</Button> 
-
-                <Button onClick={logoutHandlerHost} varriant='outlined' >Logout</Button>
-
-                <SearchIcon sx={{ color: "#972e79", fontSize:40}}/>
-
-                {/* <Button onClick={logoutHandler}>Logout User</Button> */}
+                    <Button onClick={() => navigate(`/dashboard/host/${hostId}`)} varriant='outlined' >Dashboard</Button> 
+                    <Button onClick={logoutHandlerHost} varriant='outlined' >Logout</Button>
+                    <SearchIcon sx={{ color: "#972e79", fontSize:40}}/>
                 </div>
                 }
             </div>

@@ -44,11 +44,6 @@ UserSchema.pre('save', function(next) {
     });
 });
 
-// middleware to add in another validations
-// using prehook to have it run before validations
-// feature of Middleware is the "next" function. 
-// Essentially when our Middleware has finished whatever it needs to do, 
-// we need to call this to have the next Middleware or next function (in this case normal validations) run.
 UserSchema.pre('validate', function(next) {
     if (this.password !== this.confirmPassword) {
         this.invalidate('confirmPassword', 'Passwords do not match');
@@ -56,9 +51,6 @@ UserSchema.pre('validate', function(next) {
     next();
 });
 
-// // the .virtual needs to run after the validate has been confirmed
-// // allows to confirm password without having to store the info in our db
-// // Schema#virtual returns a VirtualType object
 UserSchema.virtual('confirmPassword')
     .get( () => this._confirmPassword )
     .set( value => this._confirmPassword = value );
