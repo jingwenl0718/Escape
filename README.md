@@ -68,8 +68,11 @@ https://www.youtube.com/watch?v=6uB1os20bXA
    touch .env
    ```
    Store API keys inside .env follow the following pattern
+   
    "REACT_APP_GOOGLE_MAPS_API_KEY = Your_API_Key"
+  
    "REACT_APP_GEOCODE_API_KEY= Your_API_Key"
+   
    Run REACT application
    ```
    npm run start
