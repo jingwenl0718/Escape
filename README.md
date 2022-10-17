@@ -12,7 +12,7 @@ https://www.youtube.com/watch?v=6uB1os20bXA
 
 ## Table of Contents
 - [Prerequisites](#prerequisites)
-- [Installation](#installation)VvV
+- [Installation](#installation)
 - [Credits](#credits)
 - [License](#license)
 
