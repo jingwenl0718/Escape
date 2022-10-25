@@ -5,7 +5,7 @@ This project was created with another three students as a part of the MERN full-
 
 Overall, it was a great development experience! This group project not only allowed me to learn something new entirely on my own but also sharpened my skillsets in terms of collaborating with other developers. During the one-week sprint, our group spent more than 30 hours discussing the implementation of new features, styling the website, and debugging together. 
 
-Key technologies used in this application include REACT, APIs, Express, Mongoose, MongoDB, Multer, and Socket.IO. 
+Key technologies used in this application include Javascript, Express.js, Node.js, REACT, MongoDB, Mongoose, Google maps API, Geocoding API, Socket.IO, and multer. 
 
 ## Demo
 https://www.youtube.com/watch?v=6uB1os20bXA
